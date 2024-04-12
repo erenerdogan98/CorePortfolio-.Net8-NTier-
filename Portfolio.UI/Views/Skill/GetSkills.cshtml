@@ -1,0 +1,77 @@
+﻿@model IEnumerable<SkillDTO>
+@{
+    ViewData["Title"] = "GetSkills";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+
+<div class="main-panel">
+    <div class="content">
+        <div class="container-fluid">
+            <h4 class="page-title">Skills Page</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Skills</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-sub">
+                                You can perform operations related to Skills from the panel below :
+                            </div>
+                            <table class="table mt-3">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Level</th>
+                                        <th scope="col">Edit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td>@item.Id</td>
+                                            <td>@item.Title</td>
+                                            <td>@item.Level</td>
+                                            <td><a asp-controller="Skill" asp-action="UpdateSkill" asp-route-id="@item.Id" class="btn btn-outline-info">Edit</a></td>
+                                            <td><a asp-controller="Skill" asp-action="DeleteSkill" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                            <a asp-controller="Skill" asp-action="AddSkill" class="btn btn-outline-success">Add New Skill</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <nav class="pull-left">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.themekita.com">
+                            ThemeKita
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://themewagon.com/license/#free-item">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright ml-auto">
+                2018, made with <i class="la la-heart heart text-danger"></i> by <a href="http://www.themekita.com">ThemeKita</a>
+            </div>
+        </div>
+    </footer>
+</div>

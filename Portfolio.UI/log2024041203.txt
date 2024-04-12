@@ -1,0 +1,36 @@
+2024-04-12 03:59:34.232 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 03:59:34.647 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-12 03:59:34.649 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-12 03:59:34.719 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-12 03:59:34.724 +03:00 [INF] Hosting environment: Development
+2024-04-12 03:59:34.726 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-12 03:59:35.541 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/ - null null
+2024-04-12 03:59:35.755 +03:00 [INF] HTTP GET / responded 404 in 1.5793 ms
+2024-04-12 03:59:35.766 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/ - 404 0 null 233.9831ms
+2024-04-12 03:59:35.790 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7121/, Response status code: 404
+2024-04-12 03:59:41.038 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Experience/Experiences - null null
+2024-04-12 03:59:41.069 +03:00 [INF] Executing endpoint 'Portfolio.UI.Controllers.ExperienceController.Experiences (Portfolio.UI)'
+2024-04-12 03:59:41.124 +03:00 [INF] Route matched with {action = "Experiences", controller = "Experience"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Experiences() on controller Portfolio.UI.Controllers.ExperienceController (Portfolio.UI).
+2024-04-12 03:59:44.290 +03:00 [INF] Executing ViewResult, running view Experiences.
+2024-04-12 03:59:46.768 +03:00 [INF] Executed ViewResult - view Experiences executed in 2476.8818ms.
+2024-04-12 03:59:46.781 +03:00 [INF] Executed action Portfolio.UI.Controllers.ExperienceController.Experiences (Portfolio.UI) in 5649.1913ms
+2024-04-12 03:59:46.785 +03:00 [INF] Executed endpoint 'Portfolio.UI.Controllers.ExperienceController.Experiences (Portfolio.UI)'
+2024-04-12 03:59:46.806 +03:00 [INF] HTTP GET /Experience/Experiences responded 200 in 5739.0041 ms
+2024-04-12 03:59:46.866 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-12 03:59:46.887 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Experience/Experiences - 200 null text/html; charset=utf-8 5848.7956ms
+2024-04-12 03:59:46.893 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 26.8076ms
+2024-04-12 03:59:47.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_vs/browserLink - null null
+2024-04-12 03:59:47.204 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.5207ms
+2024-04-12 03:59:49.310 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Experience/add-experience - null null
+2024-04-12 03:59:49.325 +03:00 [INF] Executing endpoint 'Portfolio.UI.Controllers.ExperienceController.AddExperience (Portfolio.UI)'
+2024-04-12 03:59:49.329 +03:00 [INF] Route matched with {action = "AddExperience", controller = "Experience"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddExperience() on controller Portfolio.UI.Controllers.ExperienceController (Portfolio.UI).
+2024-04-12 03:59:49.423 +03:00 [INF] Executing ViewResult, running view AddExperience.
+2024-04-12 03:59:58.530 +03:00 [INF] Executed ViewResult - view AddExperience executed in 9107.4776ms.
+2024-04-12 03:59:58.535 +03:00 [INF] Executed action Portfolio.UI.Controllers.ExperienceController.AddExperience (Portfolio.UI) in 9196.1484ms
+2024-04-12 03:59:58.539 +03:00 [INF] Executed endpoint 'Portfolio.UI.Controllers.ExperienceController.AddExperience (Portfolio.UI)'
+2024-04-12 03:59:58.543 +03:00 [INF] HTTP GET /Experience/add-experience responded 200 in 9218.4967 ms
+2024-04-12 03:59:58.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Experience/add-experience - 200 null text/html; charset=utf-8 9242.9464ms
+2024-04-12 03:59:58.611 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_vs/browserLink - null null
+2024-04-12 03:59:58.612 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-12 03:59:58.634 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 19.6042ms
+2024-04-12 03:59:58.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.5969ms

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<ToDoListDTO>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Layout/Index.cshtml";
+    int count = 0;
+}
+
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">ToDos</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">To-Do List</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            You can perform the to-do operations from the panel below.
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Edit</th>
+                                    <th scope="col">Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <td>@count</td>
+                                        <td>@item.Title</td>
+                                        <td>@item.Date</td>
+                                        @if (item.Status == true)
+                                        {
+                                            <td><a asp-controller="" class="btn btn-dark">Yapılmadı Olarak İşaretle</a></td>
+                                        }
+                                        else
+                                        {
+                                            <td><a href="/ToDoList/ChangeToDoListTrue/@item.Id" class="btn btn-info">Yapıldı OLarak İşaretle</a></td>
+                                        }
+
+                                        <td><a asp-asp-controller="ToDoList" asp-action="UpdateExperience" asp-route-id="@item.Id" class="btn btn-outline-success">Edit</a></td>
+                                        <td><a asp-asp-controller="ToDoList" asp-action="DeleteToDoList" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                        <a href="/ToDoList/CreateToDoList/" class="btn btn-primary">Add New To-Do </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,47 @@
+﻿@model ContactDTO
+
+@{
+    ViewData["Title"] = "AddContact";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Contacts</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Adding Contact Page</div>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="post" asp-action="add-contact">
+                            <label>Title</label>
+                            <input type="text" asp-for="Title" class="form-control" />
+                            <br />
+                            <label>Phone Number</label>
+                            <input type="tel" asp-for="PhoneNumber" class="form-control" />
+                            <br />
+                            <label>Phone Number 2</label>
+                            <input type="tel" asp-for="PhoneNumber2" class="form-control" />
+                            <br />
+                            <label>Email</label>
+                            <input type="email" asp-for="Email" class="form-control" />
+                            <br />
+                            <label>Email II</label>
+                            <input type="email" asp-for="Email2" class="form-control" />
+                            <br />
+                            <label>Address</label>
+                            <textarea rows="4" class="form-control" asp-for="Address"></textarea>
+                            <br />
+                            <label>Description</label>
+                            <textarea rows="4" class="form-control" asp-for="Description"></textarea>
+                            <br />
+                            <button class="btn btn-primary">Add Contact</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
