@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Portfolio.DTO\Portfolio.DTO.csproj" />
     <ProjectReference Include="..\Portfolio.Entities\Portfolio.Entities.csproj" />
   </ItemGroup>
 
