@@ -1,7 +1,26 @@
+using AutoMapper;
+using Portfolio.UI.DependencyManager;
+using Serilog.Events;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+	.MinimumLevel.Debug()
+	.MinimumLevel.Override("Microsoft", LogEventLevel.Information)
+	.Enrich.FromLogContext()
+	.WriteTo.Console()
+	.WriteTo.File("log.txt", rollingInterval: RollingInterval.Hour)
+	.CreateLogger();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Configuring services
+builder.Services.ConfigureMyServices();
+
+builder.Host.UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
+	.ReadFrom.Configuration(hostingContext.Configuration)
+	.WriteTo.Console());
 
 var app = builder.Build();
 
@@ -19,6 +38,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+// for serilog
+app.UseSerilogRequestLogging();
 
 app.MapControllerRoute(
     name: "default",

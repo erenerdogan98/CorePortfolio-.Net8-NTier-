@@ -1,0 +1,13 @@
+﻿using AutoMapper;
+using Portfolio.BLL.Abstract;
+using Portfolio.DAL.Abstract;
+using Portfolio.DTO;
+using Portfolio.Entities;
+
+namespace Portfolio.BLL.Concrete
+{
+    public class AboutManager(IAboutDAL aboutDAL, IMapper mapper) : GenericManager<About,AboutDTO>(aboutDAL, mapper), IAboutService
+    {
+        
+    }
+}
