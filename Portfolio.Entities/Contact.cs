@@ -2,7 +2,7 @@
 
 namespace Portfolio.Entities
 {
-    public class Contact
+    public class Contact : IEntityBase
     {
         [Key]
         public int Id { get; set; }

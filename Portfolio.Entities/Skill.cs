@@ -2,7 +2,7 @@
 
 namespace Portfolio.Entities
 {
-    public class Skill
+    public class Skill : IEntityBase
     {
         [Key]
         public int Id { get; set; }

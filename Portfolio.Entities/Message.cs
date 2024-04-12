@@ -2,7 +2,7 @@
 
 namespace Portfolio.Entities
 {
-    public class Message
+    public class Message : IEntityBase
     {
         [Key]
         public int Id { get; set; }

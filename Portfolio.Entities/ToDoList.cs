@@ -2,12 +2,13 @@
 
 namespace Portfolio.Entities
 {
-    public class About : IEntityBase
+    public class ToDoList : IEntityBase
     {
         [Key]
         public int Id { get; set; }
         public string Title { get; set; }
-        public string SubDescription { get; set; }
-        public string Details { get; set; }
+        public string ImageUrl { get; set; }
+        public DateTime Date { get; set; }
+        public bool Status { get; set; }
     }
 }

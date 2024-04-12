@@ -2,7 +2,7 @@
 
 namespace Portfolio.Entities
 {
-    public class SocialMedia
+    public class SocialMedia : IEntityBase
     {
         [Key]
         public int Id { get; set; }
