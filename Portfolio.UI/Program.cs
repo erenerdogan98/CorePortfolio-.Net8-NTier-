@@ -2,6 +2,7 @@ using AutoMapper;
 using Portfolio.UI.DependencyManager;
 using Serilog.Events;
 using Serilog;
+using Portfolio.UI.Services;
 
 Log.Logger = new LoggerConfiguration()
 	.MinimumLevel.Debug()
@@ -13,14 +14,22 @@ Log.Logger = new LoggerConfiguration()
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 // Configuring services
 builder.Services.ConfigureMyServices();
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 builder.Host.UseSerilog((hostingContext, loggerConfiguration) => loggerConfiguration
 	.ReadFrom.Configuration(hostingContext.Configuration)
 	.WriteTo.Console());
+
+// for client
+builder.Services.AddHttpClient();
+
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 

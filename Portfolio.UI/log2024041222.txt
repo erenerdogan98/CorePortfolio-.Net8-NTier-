@@ -1,0 +1,130 @@
+2024-04-12 22:29:24.885 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-12 22:29:25.766 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-12 22:29:25.769 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-12 22:29:25.810 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-12 22:29:25.813 +03:00 [INF] Hosting environment: Development
+2024-04-12 22:29:25.815 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-12 22:29:26.820 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Default/Index - null null
+2024-04-12 22:29:27.325 +03:00 [INF] Executing endpoint 'Portfolio.UI.Controllers.DefaultController.Index (Portfolio.UI)'
+2024-04-12 22:29:27.385 +03:00 [INF] Route matched with {action = "Index", controller = "Default"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Portfolio.UI.Controllers.DefaultController (Portfolio.UI).
+2024-04-12 22:29:27.405 +03:00 [INF] Executing ViewResult, running view Index.
+2024-04-12 22:29:27.596 +03:00 [INF] Executed ViewResult - view Index executed in 196.3877ms.
+2024-04-12 22:29:27.607 +03:00 [INF] Executed action Portfolio.UI.Controllers.DefaultController.Index (Portfolio.UI) in 216.8064ms
+2024-04-12 22:29:27.610 +03:00 [INF] Executed endpoint 'Portfolio.UI.Controllers.DefaultController.Index (Portfolio.UI)'
+2024-04-12 22:29:27.617 +03:00 [INF] HTTP GET /Default/Index responded 200 in 291.5633 ms
+2024-04-12 22:29:27.632 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Default/Index - 200 null text/html; charset=utf-8 814.8046ms
+2024-04-12 22:29:27.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/css/base.css - null null
+2024-04-12 22:29:27.701 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/css/vendor.css - null null
+2024-04-12 22:29:27.708 +03:00 [INF] The file /hola-master/css/base.css was not modified
+2024-04-12 22:29:27.719 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/css/main.css - null null
+2024-04-12 22:29:27.719 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Default/images/logo.png - null null
+2024-04-12 22:29:27.739 +03:00 [INF] The file /hola-master/css/vendor.css was not modified
+2024-04-12 22:29:27.744 +03:00 [INF] The file /hola-master/css/main.css was not modified
+2024-04-12 22:29:27.741 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/css/base.css - 304 null text/css 54.1334ms
+2024-04-12 22:29:27.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/beetle.jpg - null null
+2024-04-12 22:29:27.768 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/css/main.css - 304 null text/css 49.2863ms
+2024-04-12 22:29:27.766 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/css/vendor.css - 304 null text/css 64.4965ms
+2024-04-12 22:29:27.755 +03:00 [INF] HTTP GET /Default/images/logo.png responded 404 in 0.1460 ms
+2024-04-12 22:29:27.831 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/js/pace.min.js - null null
+2024-04-12 22:29:27.843 +03:00 [INF] The file /hola-master/js/pace.min.js was not modified
+2024-04-12 22:29:27.846 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/js/pace.min.js - 304 null text/javascript 15.0428ms
+2024-04-12 22:29:27.825 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/js/modernizr.js - null null
+2024-04-12 22:29:27.820 +03:00 [INF] The file /hola-master/images/portfolio/beetle.jpg was not modified
+2024-04-12 22:29:27.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Default/images/logo.png - 404 0 null 139.1902ms
+2024-04-12 22:29:27.862 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/beetle.jpg - 304 null image/jpeg 82.2119ms
+2024-04-12 22:29:27.864 +03:00 [INF] The file /hola-master/js/modernizr.js was not modified
+2024-04-12 22:29:27.889 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7121/Default/images/logo.png, Response status code: 404
+2024-04-12 22:29:27.897 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/js/modernizr.js - 304 null text/javascript 71.4337ms
+2024-04-12 22:29:27.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/css/iconic/css/iconmonstr-iconic-font.min.css - null null
+2024-04-12 22:29:27.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/lighthouse.jpg - null null
+2024-04-12 22:29:27.908 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/css/fonts.css - null null
+2024-04-12 22:29:27.917 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/salad.jpg - null null
+2024-04-12 22:29:27.922 +03:00 [INF] The file /hola-master/css/iconic/css/iconmonstr-iconic-font.min.css was not modified
+2024-04-12 22:29:27.924 +03:00 [INF] The file /hola-master/images/portfolio/lighthouse.jpg was not modified
+2024-04-12 22:29:27.929 +03:00 [INF] The file /hola-master/css/fonts.css was not modified
+2024-04-12 22:29:27.936 +03:00 [INF] The file /hola-master/images/portfolio/salad.jpg was not modified
+2024-04-12 22:29:27.938 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/css/iconic/css/iconmonstr-iconic-font.min.css - 304 null text/css 37.8689ms
+2024-04-12 22:29:27.939 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/lighthouse.jpg - 304 null image/jpeg 39.2823ms
+2024-04-12 22:29:27.941 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/css/fonts.css - 304 null text/css 33.4419ms
+2024-04-12 22:29:27.949 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/salad.jpg - 304 null image/jpeg 32.2139ms
+2024-04-12 22:29:27.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/woodcraft.jpg - null null
+2024-04-12 22:29:27.996 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/js/jquery-3.2.1.min.js - null null
+2024-04-12 22:29:28.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/js/plugins.js - null null
+2024-04-12 22:29:28.023 +03:00 [INF] The file /hola-master/images/portfolio/woodcraft.jpg was not modified
+2024-04-12 22:29:28.019 +03:00 [INF] The file /hola-master/js/plugins.js was not modified
+2024-04-12 22:29:28.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-12 22:29:28.039 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/js/plugins.js - 304 null text/javascript 36.9296ms
+2024-04-12 22:29:28.027 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/woodcraft.jpg - 304 null image/jpeg 32.9644ms
+2024-04-12 22:29:28.047 +03:00 [INF] The file /hola-master/js/jquery-3.2.1.min.js was not modified
+2024-04-12 22:29:28.048 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/skaterboy.jpg - null null
+2024-04-12 22:29:28.064 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/liberty.jpg - null null
+2024-04-12 22:29:28.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/minimalismo.jpg - null null
+2024-04-12 22:29:28.073 +03:00 [INF] The file /hola-master/images/portfolio/skaterboy.jpg was not modified
+2024-04-12 22:29:28.070 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/js/jquery-3.2.1.min.js - 304 null text/javascript 74.7477ms
+2024-04-12 22:29:28.086 +03:00 [INF] The file /hola-master/images/portfolio/minimalismo.jpg was not modified
+2024-04-12 22:29:28.096 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/skaterboy.jpg - 304 null image/jpeg 48.0139ms
+2024-04-12 22:29:28.107 +03:00 [INF] The file /hola-master/images/portfolio/liberty.jpg was not modified
+2024-04-12 22:29:28.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 114.4966ms
+2024-04-12 22:29:28.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/minimalismo.jpg - 304 null image/jpeg 48.7845ms
+2024-04-12 22:29:28.121 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/js/main.js - null null
+2024-04-12 22:29:28.145 +03:00 [INF] The file /hola-master/js/main.js was not modified
+2024-04-12 22:29:28.136 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/liberty.jpg - 304 null image/jpeg 71.7186ms
+2024-04-12 22:29:28.124 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/shutterbug.jpg - null null
+2024-04-12 22:29:28.149 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/js/main.js - 304 null text/javascript 28.3973ms
+2024-04-12 22:29:28.162 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/avatars/user-01.jpg - null null
+2024-04-12 22:29:28.167 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/avatars/user-05.jpg - null null
+2024-04-12 22:29:28.176 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/avatars/user-02.jpg - null null
+2024-04-12 22:29:28.180 +03:00 [INF] The file /hola-master/images/portfolio/shutterbug.jpg was not modified
+2024-04-12 22:29:28.190 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_vs/browserLink - null null
+2024-04-12 22:29:28.195 +03:00 [INF] The file /hola-master/images/avatars/user-01.jpg was not modified
+2024-04-12 22:29:28.198 +03:00 [INF] The file /hola-master/images/avatars/user-05.jpg was not modified
+2024-04-12 22:29:28.203 +03:00 [INF] The file /hola-master/images/avatars/user-02.jpg was not modified
+2024-04-12 22:29:28.204 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/portfolio/shutterbug.jpg - 304 null image/jpeg 80.2762ms
+2024-04-12 22:29:28.216 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/avatars/user-01.jpg - 304 null image/jpeg 54.1908ms
+2024-04-12 22:29:28.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Default/images/logo.png - null null
+2024-04-12 22:29:28.217 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/avatars/user-05.jpg - 304 null image/jpeg 50.4534ms
+2024-04-12 22:29:28.219 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/avatars/user-02.jpg - 304 null image/jpeg 42.0803ms
+2024-04-12 22:29:28.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/fonts/librebaskerville/librebaskerville-regular-webfont.woff2 - null null
+2024-04-12 22:29:28.241 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-extrabold-webfont.woff2 - null null
+2024-04-12 22:29:28.243 +03:00 [INF] HTTP GET /Default/images/logo.png responded 404 in 0.0209 ms
+2024-04-12 22:29:28.246 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-bold-webfont.woff2 - null null
+2024-04-12 22:29:28.250 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/fonts/librebaskerville/librebaskerville-bold-webfont.woff2 - null null
+2024-04-12 22:29:28.253 +03:00 [INF] The file /hola-master/fonts/librebaskerville/librebaskerville-regular-webfont.woff2 was not modified
+2024-04-12 22:29:28.267 +03:00 [INF] The file /hola-master/fonts/montserrat/montserrat-extrabold-webfont.woff2 was not modified
+2024-04-12 22:29:28.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Default/images/logo.png - 404 0 null 51.0461ms
+2024-04-12 22:29:28.271 +03:00 [INF] The file /hola-master/fonts/montserrat/montserrat-bold-webfont.woff2 was not modified
+2024-04-12 22:29:28.275 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/fonts/librebaskerville/librebaskerville-regular-webfont.woff2 - 304 null font/woff2 53.82ms
+2024-04-12 22:29:28.274 +03:00 [INF] The file /hola-master/fonts/librebaskerville/librebaskerville-bold-webfont.woff2 was not modified
+2024-04-12 22:29:28.284 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-bold-webfont.woff2 - 304 null font/woff2 37.6405ms
+2024-04-12 22:29:28.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-extrabold-webfont.woff2 - 304 null font/woff2 48.3167ms
+2024-04-12 22:29:28.293 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7121/Default/images/logo.png, Response status code: 404
+2024-04-12 22:29:28.303 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-semibold-webfont.woff2 - null null
+2024-04-12 22:29:28.311 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/fonts/librebaskerville/librebaskerville-bold-webfont.woff2 - 304 null font/woff2 60.4725ms
+2024-04-12 22:29:28.318 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-regular-webfont.woff2 - null null
+2024-04-12 22:29:28.327 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/css/iconic/fonts/iconmonstr-iconic-font.woff2?v=1.2.0 - null null
+2024-04-12 22:29:28.333 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-medium-webfont.woff2 - null null
+2024-04-12 22:29:28.386 +03:00 [INF] The file /hola-master/fonts/montserrat/montserrat-regular-webfont.woff2 was not modified
+2024-04-12 22:29:28.394 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/count-bg.jpg - null null
+2024-04-12 22:29:28.396 +03:00 [INF] The file /hola-master/fonts/montserrat/montserrat-semibold-webfont.woff2 was not modified
+2024-04-12 22:29:28.400 +03:00 [INF] The file /hola-master/css/iconic/fonts/iconmonstr-iconic-font.woff2 was not modified
+2024-04-12 22:29:28.403 +03:00 [INF] The file /hola-master/fonts/montserrat/montserrat-medium-webfont.woff2 was not modified
+2024-04-12 22:29:28.406 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-regular-webfont.woff2 - 304 null font/woff2 88.5084ms
+2024-04-12 22:29:28.411 +03:00 [INF] The file /hola-master/images/count-bg.jpg was not modified
+2024-04-12 22:29:28.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-semibold-webfont.woff2 - 304 null font/woff2 123.5675ms
+2024-04-12 22:29:28.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/css/iconic/fonts/iconmonstr-iconic-font.woff2?v=1.2.0 - 304 null font/woff2 106.9771ms
+2024-04-12 22:29:28.436 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/fonts/montserrat/montserrat-medium-webfont.woff2 - 304 null font/woff2 103.745ms
+2024-04-12 22:29:28.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/testimonial-bg.jpg - null null
+2024-04-12 22:29:28.454 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/count-bg.jpg - 304 null image/jpeg 59.9431ms
+2024-04-12 22:29:28.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/images/contact-bg.jpg - null null
+2024-04-12 22:29:28.495 +03:00 [INF] The file /hola-master/images/contact-bg.jpg was not modified
+2024-04-12 22:29:28.503 +03:00 [INF] The file /hola-master/images/testimonial-bg.jpg was not modified
+2024-04-12 22:29:28.507 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/contact-bg.jpg - 304 null image/jpeg 50.5058ms
+2024-04-12 22:29:28.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/images/testimonial-bg.jpg - 304 null image/jpeg 64.6019ms
+2024-04-12 22:29:28.553 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_vs/browserLink - 200 null text/javascript; charset=UTF-8 363.659ms
+2024-04-12 22:29:28.625 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Default/images/hero-bg.jpg - null null
+2024-04-12 22:29:28.644 +03:00 [INF] HTTP GET /Default/images/hero-bg.jpg responded 404 in 0.0244 ms
+2024-04-12 22:29:28.665 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Default/images/hero-bg.jpg - 404 0 null 39.4706ms
+2024-04-12 22:29:28.684 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7121/Default/images/hero-bg.jpg, Response status code: 404
+2024-04-12 22:29:28.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/hola-master/favicon.ico - null null
+2024-04-12 22:29:28.803 +03:00 [INF] Sending file. Request path: '/hola-master/favicon.ico'. Physical path: 'D:\C# uygulamalar\CorePortfolio\Portfolio.UI\wwwroot\hola-master\favicon.ico'
+2024-04-12 22:29:28.810 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/hola-master/favicon.ico - 200 1150 image/x-icon 66.9178ms

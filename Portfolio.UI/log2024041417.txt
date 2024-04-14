@@ -1,0 +1,125 @@
+2024-04-14 17:01:54.545 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-14 17:01:54.845 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-14 17:01:54.849 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-14 17:01:54.881 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-14 17:01:54.884 +03:00 [INF] Hosting environment: Development
+2024-04-14 17:01:54.886 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-14 17:01:56.055 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Authorization/Login - null null
+2024-04-14 17:01:56.391 +03:00 [INF] Executing endpoint 'Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI)'
+2024-04-14 17:01:56.438 +03:00 [INF] Route matched with {action = "Login", controller = "Authorization"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio.UI.Controllers.AuthorizationController (Portfolio.UI).
+2024-04-14 17:01:56.458 +03:00 [INF] Executed action Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI) in 3.8647ms
+2024-04-14 17:01:56.467 +03:00 [INF] Executed endpoint 'Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI)'
+2024-04-14 17:01:56.472 +03:00 [ERR] HTTP GET /Authorization/Login responded 500 in 82.0096 ms
+System.InvalidOperationException: Unable to resolve service for type 'Portfolio.UI.Services.IAuthService' while attempting to activate 'Portfolio.UI.Controllers.AuthorizationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-04-14 17:01:56.515 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Portfolio.UI.Services.IAuthService' while attempting to activate 'Portfolio.UI.Controllers.AuthorizationController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method2(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-14 17:01:56.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Authorization/Login - 500 null text/html; charset=utf-8 561.588ms
+2024-04-14 17:01:56.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-14 17:01:56.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_vs/browserLink - null null
+2024-04-14 17:01:56.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 33.7986ms
+2024-04-14 17:01:56.892 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_vs/browserLink - 200 null text/javascript; charset=UTF-8 183.9926ms
+2024-04-14 17:03:16.597 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-14 17:03:16.801 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-14 17:03:16.804 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-14 17:03:16.834 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-14 17:03:16.837 +03:00 [INF] Hosting environment: Development
+2024-04-14 17:03:16.839 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-14 17:03:17.257 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/Authorization/Login - null null
+2024-04-14 17:03:17.526 +03:00 [INF] Executing endpoint 'Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI)'
+2024-04-14 17:03:17.572 +03:00 [INF] Route matched with {action = "Login", controller = "Authorization"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller Portfolio.UI.Controllers.AuthorizationController (Portfolio.UI).
+2024-04-14 17:03:17.605 +03:00 [INF] Executing ViewResult, running view Login.
+2024-04-14 17:03:17.711 +03:00 [INF] Executed ViewResult - view Login executed in 116.8605ms.
+2024-04-14 17:03:17.838 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-14 17:03:17.922 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_vs/browserLink - null null
+2024-04-14 17:03:18.149 +03:00 [INF] Executed action Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI) in 566.0813ms
+2024-04-14 17:03:18.168 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 329.7368ms
+2024-04-14 17:03:18.181 +03:00 [INF] Executed endpoint 'Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI)'
+2024-04-14 17:03:18.191 +03:00 [INF] HTTP GET /Authorization/Login responded 200 in 666.0198 ms
+2024-04-14 17:03:18.201 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/Authorization/Login - 200 null text/html; charset=utf-8 946.3674ms
+2024-04-14 17:03:18.239 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_vs/browserLink - 200 null text/javascript; charset=UTF-8 316.7175ms
+2024-04-14 17:03:41.529 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7121/Authorization/Login - application/x-www-form-urlencoded 223
+2024-04-14 17:03:41.575 +03:00 [INF] Executing endpoint 'Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI)'
+2024-04-14 17:03:41.614 +03:00 [INF] Route matched with {action = "Login", controller = "Authorization"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Portfolio.UI.ViewModels.LoginViewModel) on controller Portfolio.UI.Controllers.AuthorizationController (Portfolio.UI).
+2024-04-14 17:03:41.713 +03:00 [INF] Start processing HTTP request POST https://localhost:7253/api/Auth/login
+2024-04-14 17:03:41.718 +03:00 [INF] Sending HTTP request POST https://localhost:7253/api/Auth/login
+2024-04-14 17:03:42.366 +03:00 [INF] Received HTTP response headers after 641.0423ms - 200
+2024-04-14 17:03:42.375 +03:00 [INF] End processing HTTP request after 664.3298ms - 200
+2024-04-14 17:03:42.443 +03:00 [INF] Executed action Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI) in 820.9011ms
+2024-04-14 17:03:42.448 +03:00 [INF] Executed endpoint 'Portfolio.UI.Controllers.AuthorizationController.Login (Portfolio.UI)'
+2024-04-14 17:03:42.451 +03:00 [ERR] HTTP POST /Authorization/Login responded 500 in 876.3287 ms
+System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at Portfolio.UI.Controllers.AuthorizationController.Login(LoginViewModel login) in D:\C# uygulamalar\CorePortfolio\Portfolio.UI\Controllers\AuthorizationController.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2024-04-14 17:03:42.502 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Session has not been configured for this application or request.
+   at Microsoft.AspNetCore.Http.DefaultHttpContext.get_Session()
+   at Portfolio.UI.Controllers.AuthorizationController.Login(LoginViewModel login) in D:\C# uygulamalar\CorePortfolio\Portfolio.UI\Controllers\AuthorizationController.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-14 17:03:42.560 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7121/Authorization/Login - 500 null text/html; charset=utf-8 1031.3845ms
+2024-04-14 17:03:42.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-14 17:03:42.632 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7121/_vs/browserLink - null null
+2024-04-14 17:03:42.657 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 25.612ms
+2024-04-14 17:03:42.713 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7121/_vs/browserLink - 200 null text/javascript; charset=UTF-8 80.7595ms

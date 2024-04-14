@@ -1,0 +1,30 @@
+2024-04-14 00:49:39.962 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-14 00:49:40.181 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-14 00:49:40.186 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-14 00:49:40.231 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-14 00:49:40.233 +03:00 [INF] Hosting environment: Development
+2024-04-14 00:49:40.234 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-14 00:52:42.229 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-14 00:52:42.551 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-14 00:52:42.555 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-14 00:52:42.607 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-14 00:52:42.609 +03:00 [INF] Hosting environment: Development
+2024-04-14 00:52:42.611 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-14 00:53:32.569 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-14 00:53:32.800 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-14 00:53:32.803 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-14 00:53:32.836 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-14 00:53:32.838 +03:00 [INF] Hosting environment: Development
+2024-04-14 00:53:32.840 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-14 00:54:34.483 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-14 00:54:34.695 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-14 00:54:34.697 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-14 00:54:34.726 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-14 00:54:34.729 +03:00 [INF] Hosting environment: Development
+2024-04-14 00:54:34.731 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI
+2024-04-14 00:55:59.080 +03:00 [INF] User profile is available. Using 'C:\Users\lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-14 00:55:59.294 +03:00 [INF] Now listening on: https://localhost:7121
+2024-04-14 00:55:59.297 +03:00 [INF] Now listening on: http://localhost:5104
+2024-04-14 00:55:59.326 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-14 00:55:59.329 +03:00 [INF] Hosting environment: Development
+2024-04-14 00:55:59.330 +03:00 [INF] Content root path: D:\C# uygulamalar\CorePortfolio\Portfolio.UI

@@ -1,6 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Portfolio.BLL.Abstract;
 using Portfolio.DTO;
+using Serilog;
+
+
 
 namespace Portfolio.UI.Controllers
 {
@@ -18,13 +21,27 @@ namespace Portfolio.UI.Controllers
         {
             return View();
         }
-        [HttpPost("add-about")]
-        public async Task<IActionResult> AddAbout(AboutDTO aboutDTO)
-        {
-            await aboutService.TAddAsync(aboutDTO);
-            return RedirectToAction("Index");
-        }
-        [HttpGet("update-about/{id}")]
+		[HttpPost("add-about")]
+		public async Task<IActionResult> AddAbout(AboutDTO aboutDTO)
+		{
+			if (!ModelState.IsValid)
+			{
+				return BadRequest(ModelState);
+			}
+
+			try
+			{
+				await aboutService.TAddAsync(aboutDTO);
+				return RedirectToAction("Index");
+			}
+			catch (Exception ex)
+			{
+				Log.Error(ex, "An error occurred while adding about information");
+				return StatusCode(500, "An error occurred while processing your request. Please try again later.");
+			}
+		}
+
+		[HttpGet("update-about/{id}")]
         public IActionResult UpdateAbout(int id)
         {
             var value = aboutService.TGetById(id);
@@ -35,8 +52,18 @@ namespace Portfolio.UI.Controllers
         [HttpPost("update-about")]
         public IActionResult UpdateAbout(AboutDTO aboutDTO)
         {
-             aboutService.TUpdate(aboutDTO);
-            return RedirectToAction("Index");
+            try
+            {
+				aboutService.TUpdate(aboutDTO);
+				return RedirectToAction("Index");
+			}
+            catch (Exception ex)
+            {
+				Log.Error(ex, "An error occurred while updating about information");
+				return StatusCode(500, "An error occurred while processing your request. Please try again later.");
+				throw;
+            } 
+            
         }
         [HttpGet("delete-about/{id}")]
         public async Task<IActionResult> DeleteAbout(int id)
